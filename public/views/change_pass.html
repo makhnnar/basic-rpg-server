@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<title>RPG DEMO</title>
+	
+</head>
+<body BGCOLOR="#e1f5fe">
+	
+	<script type="text/javascript" src="../js/jquery2.1.1.min.js"></script>
+	<!--<script type="text/javascript" src="../cliente/js/jquery.js"></script>-->
+  	<script type="text/javascript" src="../js/materialize.js"></script>
+  	<script type="text/javascript" src="../js/init.js"></script>
+    <script type="text/javascript" src="../js/md5.js"></script>
+  	<script type="text/javascript" src="../js/main.js"></script>
+
+	<div class="navbar-fixed">
+    	<nav class="light-blue" role="navigation">
+      		<div class="nav-wrapper">
+        		<a id="logo-container" href="register.html" class="brand-logo">
+        			<b>RPG DEMO</b>
+        		</a>
+        		<ul class="right hide-on-med-and-down">
+          			<!--<li>
+            			<a href="formulario_user.html">
+            				<i class="material-icons left">
+            					<img width="60" src="../cliente/icons/add-user.png"/>
+            				</i>
+            				Registrarse
+            			</a>
+          			</li>-->
+        		</ul>
+      		</div>
+    	</nav>
+  	</div>
+
+  	<div class="container light-blue lighten-5">
+    <div class="section">
+
+      
+    <!--   Login Area   -->
+        <div class="row">
+
+          <div class="container">
+
+            <div class="section">
+
+                <h5 class="header center" >Recuperar Contraseña</h5>
+                
+                <div class="card small vertical light-blue lighten-2">
+                    
+                  <div class="row"> </div>
+
+					
+					      <!--Username. Se usa un correo como usuario-->
+					        <div class="row">
+						
+	                  <div class="col s3"></div>
+
+							      <div class="input-field col s6 center">
+          						  <input id="user_username" type="email" class="validate">
+          						  <label for="user_username" data-error="wrong" data-success="right" class="black-text text-darken-2">  Correo Electronico
+                        </label>
+        			      </div>	
+	
+		
+  				        </div>
+					
+					
+					      <!--Password1-->
+					        <div class="row">
+
+						        <div class="col s3"></div>
+							      
+                    <div class="input-field col s6 center">
+          						  
+                        <input id="user_password1" type="password" class="validate">
+          						  <label for="user_password1" class="black-text text-darken-2">
+                          New Password
+                        </label>
+        			      
+                    </div>	
+						
+      		        </div>
+
+  				
+                <!--Password2-->
+                  <div class="row">
+                    
+                    <div class="col s3"></div>
+
+                    <div class="input-field col s6 center">
+                        <input id="user_password2" type="password" class="validate">
+                        <label for="user_password2" class="black-text text-darken-2">
+                          Repeat Password
+                        </label>
+                    </div>  
+            
+                  </div>
+
+					      <div class="row"></div>
+
+                <!--Boton-->
+				          <div class="row">
+					          <div class="center-align">
+						          <a id="btn_cambiar" class="waves-effect waves-light blue darken-1 btn black-text text-darken-2">
+                        Cambiar
+                      </a>	
+					          </div>	
+				          </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+	
+</body>
+</html>

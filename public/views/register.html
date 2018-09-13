@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<title>RPG DEMO</title>
+	
+</head>
+<body BGCOLOR="#e1f5fe">
+	
+	<script type="text/javascript" src="../js/jquery2.1.1.min.js"></script>
+	<!--<script type="text/javascript" src="../cliente/js/jquery.js"></script>-->
+  	<script type="text/javascript" src="../js/materialize.js"></script>
+  	<script type="text/javascript" src="../js/init.js"></script>
+    <script type="text/javascript" src="../js/md5.js"></script>
+  	<script type="text/javascript" src="../js/main.js"></script>
+
+	<div class="navbar-fixed">
+    	<nav class="light-blue" role="navigation">
+      		<div class="nav-wrapper">
+        		<a id="logo-container" href="index_login_web.html" class="brand-logo">
+        			<b>RPG DEMO</b>
+        		</a>
+        		<ul class="right hide-on-med-and-down">
+          			<!--<li>
+            			<a href="formulario_user.html">
+            				<i class="material-icons left">
+            					<img width="60" src="../cliente/icons/add-user.png"/>
+            				</i>
+            				Registrarse
+            			</a>
+          			</li>-->
+        		</ul>
+      		</div>
+    	</nav>
+  	</div>
+
+  	<div class="container light-blue lighten-5">
+    <div class="section">
+
+      
+        <!--   Login Area   -->
+        <div class="row">
+          <div class="container">
+            <div class="section">
+
+                <h5 class="header" >Datos de Login</h5>
+                
+                <div class="card small vertical light-blue lighten-2">
+                    
+                    <div class="row">
+                    	
+                    </div>
+
+					
+					<!--Username. Se usa un correo como usuario-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          						<input id="user_username" type="email" class="validate">
+          						<label for="user_username" data-error="wrong" data-success="right" class="black-text text-darken-2">Correo Electronico</label>
+        					</div>	
+	
+		
+  					</div>
+					
+					
+					<!--Password-->
+					<div class="row">
+						
+					
+							<div class="input-field col s6">
+          						<input id="user_password" type="password" class="validate">
+          						<label for="user_password" class="black-text text-darken-2">Password</label>
+        					</div>	
+					
+						
+      				</div>
+
+      				<!--Nickname-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          						<input id="user_nickname" type="text" class="validate">
+          						<label for="user_nickname" class="black-text text-darken-2">Nickname</label>
+        					</div>	
+	
+		
+  					</div>
+					
+					<div class="row">
+                    	
+                    </div>
+
+					
+					
+                </div>
+				
+				<div class="row"> </div> 
+
+                <h5 class="header" >Datos de usuario</h5>
+                
+                <div class="card large vertical light-blue lighten-2">
+                    
+                    <div class="row">
+                    	
+                    </div>
+
+					
+					<!--Nombre y Apellido-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          						<input id="user_nombre" type="text" class="validate">
+          						<label for="user_nombre" class="black-text text-darken-2">Nombre</label>
+        					</div>	
+							
+							<div class="input-field col s6">
+          						<input id="user_apellido" type="text" class="validate">
+          						<label for="user_apellido" class="black-text text-darken-2">Apellido</label>
+        					</div>
+		
+  					</div>
+					
+					
+					<!--Cedula-->
+					<div class="row">
+						
+					
+							<div class="input-field col s6">
+          						<input id="user_cedula" type="text" class="validate">
+          						<label for="user_cedula" class="black-text text-darken-2">Documento de Identidad</label>
+        					</div>	
+					
+						
+      				</div>
+
+      				<!--Fecha de Nacimiento-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          				
+								<input id="user_fec_nac" type="text" class="datepicker">
+        						<label for="user_fec_nac" data-error="wrong" data-success="right" class="black-text text-darken-2">Fecha de Nacimiento</label>
+
+        					</div>	
+	
+		
+  					</div>
+  					<div class="row">
+  						<p class="col s1"></p>
+  						<p>
+  							Escoja su Genero
+  						</p>
+  					</div>
+					<!--Genero-->
+  					<div id="user_sexo" class="row">
+  						
+    					<div class="col s4">
+    						<input class="with-gap" name="sexo" type="radio" id="sexo1" value="Masculino" />
+      						<label for="sexo1" class="black-text text-darken-2">Masculino</label>
+    					</div>
+
+    					<div class="col s4">
+    						<input class="with-gap" name="sexo" type="radio" id="sexo2" value="Femenino" />
+      						<label for="sexo2" class="black-text text-darken-2">Femenino</label>
+    					</div>
+
+    					<div class="col s4">
+    						<input class="with-gap" name="sexo" type="radio" id="sexo3"  value="No Revelar" />
+      						<label for="sexo3" class="black-text text-darken-2">No Revelar</label>
+    					</div>
+
+    
+  					</div>
+					
+					<div class="row">
+                    	
+                    </div>
+
+					
+					
+                </div>
+
+                <h5 class="header" >Direccion de Residencia</h5>
+                
+                <div class="card medium vertical light-blue lighten-2">
+                    
+                    <div class="row">
+                    	
+                    </div>
+
+					
+					<!--Pais y Estado-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          						<input id="user_pais" type="text" class="validate">
+          						<label for="user_pais" class="black-text text-darken-2">Pais</label>
+        					</div>	
+							
+							<div class="input-field col s6">
+          						<input id="user_estado" type="text" class="validate">
+          						<label for="user_estado" class="black-text text-darken-2">Estado</label>
+        					</div>
+		
+  					</div>
+
+      				<!--Ciudad y Urbanismo-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          						<input id="user_ciudad" type="text" class="validate">
+          						<label for="user_ciudad" class="black-text text-darken-2">Ciudad</label>
+        					</div>	
+							
+							<div class="input-field col s6">
+          						<input id="user_urbanismo" type="text" class="validate">
+          						<label for="user_urbanismo" class="black-text text-darken-2">Urbanismo</label>
+        					</div>	
+	
+		
+  					</div>
+
+  					<!--Mz,Calle,Edificio y Casa,Apto-->
+					<div class="row">
+						
+						
+							<div class="input-field col s6">
+          						<input id="user_mz" type="text" class="validate">
+          						<label for="user_mz" class="black-text text-darken-2">Mz,Calle o Edificio</label>
+        					</div>	
+							
+							<div class="input-field col s6">
+          						<input id="user_casa" type="text" class="validate">
+          						<label for="user_casa" class="black-text text-darken-2">Casa o Apto</label>
+        					</div>
+		
+  					</div>
+					
+					<div class="row">
+                    	
+                    </div>
+
+					
+					
+                </div>
+
+                <!--Boton-->
+				<div class="row">
+					<div class="center-align">
+						<a id="btn_registrar" class="waves-effect waves-light blue darken-1 btn black-text text-darken-2">Registar</a>	
+					</div>	
+				</div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+	
+</body>
+</html>
